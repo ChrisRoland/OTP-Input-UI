@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dbd8d8;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.container {
+    background-color: #fff;
+    border: 3px solid #333;
+    border-radius: 20px 0;
+    padding: 30px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.otp {
+    width: 100px;
+    height: 100px;
+    margin: .9%;
+    font-size: 75px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #c9c6c6;
+    border-radius: 5px;
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.otp::-webkit-inner-spin-button, .otp::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.otp:focus {
+    outline: none;
+    border: 1px solid #333;
+}
+
+.otp:valid {
+    border-color: #03f803;
+    box-shadow: 0 1px 5px #0ff603;
+}
+
+.note {
+    background-color: #eee;
+    display: inline-block;
+    color: #555;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .otp-container {
+        flex-wrap: wrap;
+    }
+
+    .otp {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+    }
+}
